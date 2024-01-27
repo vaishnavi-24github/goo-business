@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page of Goo Business The best B2B Lead Generation Company</title>
+    <link rel="shortcut icon" href="/static/img/Goo%20Businesses.png" type="image/png">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utils.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+
+<body>
+    <div class="pogress" id="pogressID"></div>
+
+    <header>
+
+        <nav>
+            <div class="logo">
+                <img src="/static/img/Goo%20Businesses.png" height="73px">
+            </div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/whyus">Why us?</a></li>
+            </ul>
+            <form class="form" action="/searching" method="post">
+                
+                <div class="search">
+                    <input class="form-ele1" type="text" id="searchbarID" name="seachbar" placeholder="Search here..."
+                        width="20vw">
+                </div>
+                <div class="btn">
+                    <button class="bttn" type="submit">Search</button>
+                </div>
+            </form>
+
+            <a href="/searching">
+                <div class="navallproduct">All Services</div>
+            </a>
+
+        </nav>
+
+        <a href="/freetrail" class="freeTrl bblink">Get Your<br>Free Trial<br>up to $30</a>
+    </header>
+
+    <main>
+
+        <div class="container">
+
+
+            <div class="slider">
+                <div class="sliderImg1"></div>
+                <div class="sliderImg2"></div>
+                <div class="sliderImg3"></div>
+            </div>
+
+            <div id="clock" onload="currentTime()" style="font-family: sans-serif;"></div>
+
+
+            <!-- -------------------Code here------------------ -->
+           <div class="web">
+            <h2>Web Development Services</h2>
+            <!--- for all card items -->
+            <div class="web-items">
+                <!-----for card 1-->
+                <div class="web-item">
+                    <a href="/servicepage/b2b-leaad-generation/3"><img class="iimg"
+                        src="data:image/jpeg;base64,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" width="260px" height="160px"
+                        alt=""></a>
+                        <div class="lines">
+                            <a class="nameA" href="/servicepage/b2b-leaad-generation/3">
+                                <p class="line1 text-center my-sm">Static Website ..</p>
+                            </a>
+                            <p class="line2 text-center my-sm"><span class="price">$150</span>&nbsp;Price
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="discount">10%Off</span></p>
+                            <a href="/servicepage/b2b-leaad-generation/3">
+                                <p class="line3 text-center my-sm">Order Now</p>
+                            </a>
+                        </div>
+
+                </div>
+
+
+                <!-----for card item 2 ------>
+
+                <div class="web-item">
+                    <a href="/servicepage/b2b-leaad-generation/3"><img class="iimg"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQybiA6Rg5Mk_n6lzj4pdVz592hlEBgGYyNzA&usqp=CAU" width="260px" height="160px"
+                        alt=""></a>
+                        <div class="lines">
+                            <a class="nameA" href="/servicepage/b2b-leaad-generation/3">
+                                <p class="line1 text-center my-sm">Dynamic  Website ..</p>
+                            </a>
+                            <p class="line2 text-center my-sm"><span class="price">$500</span>Price
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="discount">35%Off</span></p>
+                            <a href="/servicepage/b2b-leaad-generation/3">
+                                <p class="line3 text-center my-sm">Order Now</p>
+                            </a>
+                        </div>
+
+                </div>
+
+
+                <!-----for card item 3-->
+
+
+                <div class="web-item">
+                    <a href="/servicepage/b2b-leaad-generation/3"><img class="iimg"
+                        src="https://blog.cdn.cmarix.com/blog/wp-content/uploads/2022/10/Why-Use-ReactJS-For-Developing-Websites-And-Mobile-Apps.png" width="260px" height="160px"
+                        alt=""></a>
+                        <div class="lines">
+                            <a class="nameA" href="/servicepage/b2b-leaad-generation/3">
+                                <p class="line1 text-center my-sm"> Website using React ..</p>
+                            </a>
+                            <p class="line2 text-center my-sm"><span class="price">$500</span>Price
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="discount">40%Off</span></p>
+                            <a href="/servicepage/b2b-leaad-generation/3">
+                                <p class="line3 text-center my-sm">Order Now</p>
+                            </a>
+                        </div>
+
+                </div>
+
+
+
+
+                <!---for card item 4-->
+
+
+
+                <div class="web-item">
+                    <a href="/servicepage/b2b-leaad-generation/3"><img class="iimg"
+                        src="https://www.webhopers.com/wp-content/uploads/2016/04/eCommerce-Web-Development-Services.jpg" width="260px" height="160px"
+                        alt=""></a>
+                        <div class="lines">
+                            <a class="nameA" href="/servicepage/b2b-leaad-generation/3">
+                                <p class="line1 text-center my-sm">eCommerce Website ..</p>
+                            </a>
+                            <p class="line2 text-center my-sm"><span class="price">$400</span>Price
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="discount">20%Off</span></p>
+                            <a href="/servicepage/b2b-leaad-generation/3">
+                                <p class="line3 text-center my-sm">Order Now</p>
+                            </a>
+                        </div>
+
+                </div>
+
+
+
+
+                <!----for card item 5---->
+
+
+
+                <div class="web-item">
+                    <a href="/servicepage/b2b-leaad-generation/3"><img class="iimg"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg3WysOUgq1kFKvXAGTFItC7oi0OK2HGcnTQ&usqp=CAU" width="260px" height="160px"
+                        alt=""></a>
+                        <div class="lines">
+                            <a class="nameA" href="/servicepage/b2b-leaad-generation/3">
+                                <p class="line1 text-center my-sm">Dropshipping Website ..</p>
+                            </a>
+                            <p class="line2 text-center my-sm"><span class="price">$650</span>Price
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="discount">11%Off</span></p>
+                            <a href="/servicepage/b2b-leaad-generation/3">
+                                <p class="line3 text-center my-sm">Order Now</p>
+                            </a>
+                        </div>
+
+                </div>
+
+
+
+                <!-----for card item 6-->
+
+
+                <div class="web-item">
+                    <a href="/servicepage/b2b-leaad-generation/3"><img class="iimg"
+                        src="https://cdn.dribbble.com/users/2245952/screenshots/14645187/media/e29725ae1588aab404bd7bff5c14358e.png?resize=400x300&vertical=center" width="260px" height="160px"
+                        alt=""></a>
+                        <div class="lines">
+                            <a class="nameA" href="/servicepage/b2b-leaad-generation/3">
+                                <p class="line1 text-center my-sm">Grocery or Food Website  ..</p>
+                            </a>
+                            <p class="line2 text-center my-sm"><span class="price">$750</span>Price
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="discount">50%Off</span></p>
+                            <a href="/servicepage/b2b-leaad-generation/3">
+                                <p class="line3 text-center my-sm">Order Now</p>
+                            </a>
+                        </div>
+
+                </div>
+
+
+
+
+                <!----for card item 7-->
+
+
+
+
+                <div class="web-item">
+                    <a href="/servicepage/b2b-leaad-generation/3"><img class="iimg"
+                        src="https://digitalmarketingchamp.com/wp-content/uploads/2020/12/Website-Development-Services-Online.jpg" width="260px" height="160px"
+                        alt=""></a>
+                        <div class="lines">
+                            <a class="nameA" href="/servicepage/b2b-leaad-generation/3">
+                                <p class="line1 text-center my-sm">Custom Business Website ..</p>
+                            </a>
+                            <p class="line2 text-center my-sm"><span class="price">$850</span>Price
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="discount">32%Off</span></p>
+                            <a href="/servicepage/b2b-leaad-generation/3">
+                                <p class="line3 text-center my-sm">Order Now</p>
+                            </a>
+                        </div>
+
+                </div>
+
+
+            </div>
+
+           </div>
+
+            
+
+
+
+
+
+
+            <!-- -------------------Code here------------------ -->
+
+
+            <div class="card">
+                <h2 class="my-1">B2B Lead Generation</h2>
+                <div class="card-items">
+
+
+
+                    <div class="card-item">
+                        <a href="/servicepage/b2b-leaad-generation/3"><img class="pimg"
+                                src="/media/AllServicesDBimgFolder/B2B_Lead_Generation.jpg" width="260px" height="160px"
+                                alt=""></a>
+
+                        <div class="lines">
+                            <a class="res" href="/servicepage/b2b-leaad-generation/3">
+                                <p class="line1 text-center my-sm">C-Lavle Contact List Building ..</p>
+                            </a>
+                            <p class="line2 text-center my-sm"><span class="priceperlead">$15</span>&nbsp;per 100
+                                Leads&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="offer">70%Off</span></p>
+                            <a href="/servicepage/b2b-leaad-generation/3">
+                                <p class="line3 text-center my-sm">Grab Now</p>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="card-item">
+                        <a href="/servicepage/b2b-lead-generation/4"><img class="pimg"
+                                src="/media/AllServicesDBimgFolder/1.5lead_generation_5.jpg" width="260px"
+                                height="160px" alt=""></a>
+
+                        <div class="lines">
+                            <a class="nameA" href="/servicepage/b2b-lead-generation/4">
+                                <p class="line1 text-center my-sm">B2B potential targeted custome..</p>
+                            </a>
+                            <p class="line2 text-center my-sm"><span class="priceperlead">$14</span>&nbsp;per 100
+                                Leads&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="offer">71%Off</span></p>
+                            <a href="/servicepage/b2b-lead-generation/4">
+                                <p class="line3 text-center my-sm">Grab Now</p>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="card-item">
+                        <a href="/servicepage/lead-generation-COMPANY-IN-2023/5"><img class="pimg"
+                                src="/media/AllServicesDBimgFolder/1.5get_leads.jpg" width="260px" height="160px"
+                                alt=""></a>
+
+                        <div class="lines">
+                            <a class="nameA" href="/servicepage/lead-generation-COMPANY-IN-2023/5">
+                                <p class="line1 text-center my-sm">Boost your business sales with..</p>
+                            </a>
+                            <p class="line2 text-center my-sm"><span class="priceperlead">$12</span>&nbsp;per 100
+                                Leads&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="offer">60%Off</span></p>
+                            <a href="/servicepage/lead-generation-COMPANY-IN-2023/5">
+                                <p class="line3 text-center my-sm">Grab Now</p>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="card-item">
+                        <a href="/servicepage/Lead-Generation-With-Crunchbase-IN2023/6"><img class="pimg"
+                                src="/media/AllServicesDBimgFolder/1.5Digital.jpg" width="260px" height="160px"
+                                alt=""></a>
+
+                        <div class="lines">
+                            <a class="nameA" href="/servicepage/Lead-Generation-With-Crunchbase-IN2023/6">
+                                <p class="line1 text-center my-sm">B2B lead generation with Crunc..</p>
+                            </a>
+                            <p class="line2 text-center my-sm"><span class="priceperlead">$10</span>&nbsp;per 100
+                                Leads&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="offer">68%Off</span></p>
+                            <a href="/servicepage/Lead-Generation-With-Crunchbase-IN2023/6">
+                                <p class="line3 text-center my-sm">Grab Now</p>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="card-item">
+                        <a href="/servicepage/best-lead-generation-company-in-2023/7"><img class="pimg"
+                                src="/media/AllServicesDBimgFolder/1.5B2B.jpg" width="260px" height="160px" alt=""></a>
+
+                        <div class="lines">
+                            <a class="nameA" href="/servicepage/best-lead-generation-company-in-2023/7">
+                                <p class="line1 text-center my-sm">Any type of B2B lead genetario..</p>
+                            </a>
+                            <p class="line2 text-center my-sm"><span class="priceperlead">$25</span>&nbsp;per 100
+                                Leads&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="offer">75%Off</span></p>
+                            <a href="/servicepage/best-lead-generation-company-in-2023/7">
+                                <p class="line3 text-center my-sm">Grab Now</p>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="card-item">
+                        <a href="/servicepage/bestBoost-your-business-with-prospect-list-buildin/8"><img class="pimg"
+                                src="/media/AllServicesDBimgFolder/1.5Google_Map.jpg" width="260px" height="160px"
+                                alt=""></a>
+
+                        <div class="lines">
+                            <a class="nameA" href="/servicepage/bestBoost-your-business-with-prospect-list-buildin/8">
+                                <p class="line1 text-center my-sm">Boost your business with b2b l..</p>
+                            </a>
+                            <p class="line2 text-center my-sm"><span class="priceperlead">$17</span>&nbsp;per 100
+                                Leads&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="offer">59%Off</span></p>
+                            <a href="/servicepage/bestBoost-your-business-with-prospect-list-buildin/8">
+                                <p class="line3 text-center my-sm">Grab Now</p>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="card-item">
+                        <a href="/servicepage/best-lead-generation-company-in-2023/9"><img class="pimg"
+                                src="/media/AllServicesDBimgFolder/1.5Chidi_Eze_2.jpg" width="260px" height="160px"
+                                alt=""></a>
+
+                        <div class="lines">
+                            <a class="nameA" href="/servicepage/best-lead-generation-company-in-2023/9">
+                                <p class="line1 text-center my-sm">B2b lead generation from Googl..</p>
+                            </a>
+                            <p class="line2 text-center my-sm"><span class="priceperlead">$12</span>&nbsp;per 100
+                                Leads&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="offer">58%Off</span></p>
+                            <a href="/servicepage/best-lead-generation-company-in-2023/9">
+                                <p class="line3 text-center my-sm">Grab Now</p>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+
+</body>
+
+</html>
